@@ -1,0 +1,145 @@
+
+body {
+    background-color: #1f2023 ;
+    margin: auto;
+    font-family: 'Roboto', sans-serif; 
+    width: 60%;
+    max-width:600px;
+    
+} 
+
+fieldset {
+    background-color: #d6e2de;
+    font-family:'Poppins', sans-serif; 
+    border: 1px solid #4d6d63 ; 
+    margin-bottom: 30px; 
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #e8eaed;
+    font-size: 60px; 
+    text-align: center; 
+    padding: 5px;
+    border: 15px solid #4d6d63;
+    border-left: solid 20px #1f2023 ;
+    border-right: solid 20px #1f2023; 
+    margin: auto; 
+    margin-bottom: 30px; 
+}  
+
+
+
+hr {    
+    border: solid #83b6a6 13px; 
+    padding: 5px; 
+    max-width: 290px;
+    min-width: 290px;
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border-style: dotted; 
+    border-left: 20px #1f2023 ;
+    border-right: 20px #1f2023; 
+    border-bottom: solid #1f2023 1px;
+}
+
+legend {
+    background-color: #4d6d63; 
+    text-align: end; 
+    color: white; 
+    border: 1px #1f2023 solid; 
+    border-radius: 5px; 
+    padding: 5px; 
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-variant: small-caps;  
+    font-size: 15px;
+    
+} 
+
+
+button {
+    background-color: #2b3d37; 
+    color: #d6e2de; 
+    padding: 5px;  
+    border: solid #83b6a6 0.5px; 
+    border-radius: 2px; 
+    max-width: 150px;
+    min-width: 100px;
+    max-height: 150px; 
+    min-height: 35px;
+    margin: auto;
+   
+}
+
+button:hover {
+    background-color: #83b6a6;
+    color: #2b3d37;
+}
+
+button:active {
+    background-color: #2b3d37;
+}  
+
+
+fieldset:active {
+    background-color: #a6c1b9 ;
+} 
+
+input {
+    border: 1px solid #83b6a6;
+    margin: auto;
+    text-align: center;
+}  
+
+
+.texto-centrado {
+    text-align: center;
+}
+
+
+.texto-inicio {  
+    text-align: start;
+} 
+
+.texto-fin {
+    text-align: end;
+}
+
+
+.cuadro-entrada {
+    max-width:400px;
+    min-width: 400px;
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border: solid 1px;
+    border-radius: 3px;
+    border-color:#83b6a6;
+    text-align:end;
+  }
+  
+.cuadro-pais {
+    max-width:400px;
+    min-width: 400px;
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border: solid 1px;
+    border-radius: 3px;
+    border-color:#83b6a6;
+    text-align:start;
+} 
+
+.bloque {
+    display:block;
+    margin:auto;
+    
+} 
+
+.texto-blanco {
+    color: #e8eaed; 
+    text-align: start; 
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>Afiliación</title> 
+
+  <link rel="stylesheet" href="css/estilos.css"> 
+  <link rel="stylesheet" href="css/estilo-urbano.css">
+
+</head>
+<body>
+    
+  <h1>Vení al Gym! 💪🏼</h1>
+    
+  <form action="https://postman-echo.com/post" method="post" target="_blank">
+      
+    <fieldset class="texto-centrado">
+        <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
+        
+        <label for="nombre">Nombre:* </label> <br>
+        <input type="text" id="nombre" name="nombre" required class="cuadro-pais cuadro-entrada" > <br>
+        
+        
+        <label for="apellido">Apellido:* </label> <br>
+        <input type="text" id="apellido" name="apellido" required class="cuadro-pais cuadro-entrada">
+        <br>
+        
+        <label for="documento">Documento:* </label> <br>
+        <input type="text" id="documento" name="documento" required class="cuadro-pais cuadro-entrada">
+        <br>
+        
+        <div>
+          <label for="pais">Nacionalidad:*</label> <br>
+          <input list="nacion" type="text" name="nacionalidad" id="pais" placeholder=" - Seleccionar -" required class="cuadro-entrada cuadro-pais">
+          <datalist id="nacion">
+            <option value="Argentina">
+            <option value="Brasileña">
+            <option value="Uruguaya">
+            <option value="Otra">
+            
+          </datalist>
+        </div>
+        <br>
+        
+        <label for="descripcion">Contanos un poco de vos... </label> <br>
+        <textarea id="descripcion" name="descripcion" class="cuadro-pais cuadro-entrada"></textarea>
+        <br>
+        
+        <label>Sexo:* </label> <br>
+        <input type="radio" name="sexo" value="femenino" required> Femenino
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="otro"> Otro
+        
+    </fieldset> 
+
+    <hr>
+    
+    <fieldset class="texto-centrado">
+        <legend>📱 Datos de Contacto 📧</legend> 
+        
+        <label for="telefono">Teléfono: </label> <br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Código de área y número" class="cuadro-pais cuadro-entrada">
+        <br>
+        
+        <label for="email">Dirección de correo electrónico:* </label> <br>
+        <input type="email" id="email" name="email" placeholder="mail@gmail.com" required class="cuadro-pais cuadro-entrada">
+        <br>
+    </fieldset> 
+
+    <hr>
+    
+    <fieldset>
+        <legend>🚴🏼‍♂️ Actividades 🤸🏼‍♂️</legend>
+        
+      <p>Por favor, indicá cuáles actividades te interesan.</p>
+        
+      <p class="texto-inicio">Sede Palermo:</p> 
+        <input class="texto-inicio" type="checkbox" name="actividad_palermo" value="basquet"> Básquet
+        <input type="checkbox" name="actividad_palermo" value="boxeo"> Boxeo
+        <input type="checkbox" name="actividad_palermo" value="futbol"> Fútbol
+        <input type="checkbox" name="actividad_palermo" value="tenis"> Tenis
+        
+      <p class="texto-inicio">Sede Rosario:</p> 
+        <input type="checkbox" name="actividad_rosario" value="basquet"> Básquet
+        <input type="checkbox" name="actividad_rosario" value="futbol"> Fútbol
+        <input type="checkbox" name="actividad_rosario" value="rugby"> Rugby
+        <input type="checkbox" name="actividad_rosario" value="voley"> Voley
+    </fieldset>
+    
+    <div class="texto-blanco">
+    <input type="checkbox" name="condiciones" required class="texto-inicio"> Acepto las condiciones *
+    <br>
+    <input type="checkbox" name="novedades" class="texto-inicio"> Deseo recibir novedades 
+  </div>
+    <br>
+    
+    <p class="texto-blanco">*: campo obligatorio</p>
+    
+    <div>
+    
+    <button type="submit">Iniciar afiliación</button>
+    <button type="reset">Restablecer</button>
+  
+  </div>
+  
+</form>
+    
+
+  <script type="module" src="/main.js"></script>
+  </body>
+</html>
