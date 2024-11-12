@@ -12,7 +12,8 @@ fieldset {
     background-color: #d6e2de;
     font-family:'Poppins', sans-serif; 
     border: 1px solid #4d6d63 ; 
-    margin-bottom: 30px; 
+    margin-bottom: 30px;  
+    
 }
 
 h1 {
@@ -30,7 +31,9 @@ h1 {
     margin-bottom: 30px; 
 }  
 
-
+label {
+    display: block;
+}
 
 hr {    
     border: solid #83b6a6 13px; 
@@ -63,19 +66,17 @@ legend {
 
 
 button {
-    background-color: #2b3d37; 
-    color: #d6e2de; 
-    padding: 5px;  
-    border: solid #83b6a6 0.5px; 
-    border-radius: 2px; 
-    max-width: 150px;
-    min-width: 100px;
-    max-height: 150px; 
-    min-height: 35px;
-    margin: auto;
+    background-color: #4d6d63;
+    color: white;
+    padding: 20px;
+    border-color: #a9c0b8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
    
 }
 
+/* hover-active-focus */
 button:hover {
     background-color: #83b6a6;
     color: #2b3d37;
@@ -85,18 +86,28 @@ button:active {
     background-color: #2b3d37;
 }  
 
-
-fieldset:active {
-    background-color: #a6c1b9 ;
-} 
-
 input {
     border: 1px solid #83b6a6;
     margin: auto;
-    text-align: center;
-}  
+   
+}   
 
+input:focus, textarea:focus{
+    background-color: #2d6a4f;
+    color: white;
+  }
+  input:focus::placeholder{
+    color: white;
+  }
+  
+  fieldset:focus-within{
+    background-color: #84a59d;
+  }
+  fieldset:focus-within legend{
+    background-color: #1b4332;
+  }
 
+/* clases */
 .texto-centrado {
     text-align: center;
 }
@@ -106,8 +117,8 @@ input {
     text-align: start;
 } 
 
-.texto-fin {
-    text-align: end;
+.texto-derecha {
+    text-align: right;
 }
 
 
@@ -120,7 +131,7 @@ input {
     border: solid 1px;
     border-radius: 3px;
     border-color:#83b6a6;
-    text-align:end;
+   
   }
   
 .cuadro-pais {
@@ -132,12 +143,6 @@ input {
     border: solid 1px;
     border-radius: 3px;
     border-color:#83b6a6;
-    text-align:start;
-} 
-
-.bloque {
-    display:block;
-    margin:auto;
     
 } 
 

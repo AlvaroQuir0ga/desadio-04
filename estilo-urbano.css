@@ -1,0 +1,160 @@
+/* Nueva Paleta de colores:
+#1b1f3b - Azul Marino Oscuro (fondo principal)
+#333a56 - Gris Azulado (fondo de formularios)
+#ff6b6b - Rojo Vibrante (resaltados y botones)
+#ffe66d - Amarillo Claro (detalles y bordes)
+#f5f5f5 - Blanco Roto (texto y campos de entrada)
+*/
+
+
+body {
+  
+    margin: auto;
+    font-family: 'Roboto', sans-serif; 
+    width: 60%;
+    max-width:600px;
+    
+} 
+
+fieldset {
+    background-color: #d6e2de;
+    font-family:'Poppins', sans-serif; 
+    border: 1px solid #4d6d63 ; 
+    margin-bottom: 30px;  
+    
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #e8eaed;
+    font-size: 40px;  
+    font-variant: normal;
+    text-align: center; 
+    padding: 5px; 
+    border: 15px solid #4d6d63;
+    border-left: solid 20px #1f2023 ;
+    border-right: solid 20px #1f2023; 
+    margin: auto; 
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+}  
+
+label {
+    display: block;
+}
+
+hr {    
+    border: solid #83b6a6 13px; 
+    padding: 5px; 
+    max-width: 290px;
+    min-width: 290px;
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border-style: dotted; 
+    border-left: 20px #1f2023 ;
+    border-right: 20px #1f2023; 
+    border-bottom: solid #1f2023 1px;
+}
+
+legend {
+    background-color: #4d6d63; 
+    text-align: end; 
+    color: white; 
+    border: 1px #1f2023 solid; 
+    border-radius: 5px; 
+    padding: 5px; 
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-variant: small-caps;  
+    font-size: 15px;
+    
+} 
+
+
+button {
+    background-color: #4d6d63;
+    color: white;
+    padding: 20px;
+    border-color: #a9c0b8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+   
+}
+
+/* hover-active-focus */
+button:hover {
+    background-color: #83b6a6;
+    color: #2b3d37;
+}
+
+button:active {
+    background-color: #2b3d37;
+}  
+
+input {
+    border: 1px solid #83b6a6;
+    margin: auto;
+   
+}   
+
+input:focus, textarea:focus{
+    background-color: #2d6a4f;
+    color: white;
+  }
+  input:focus::placeholder{
+    color: white;
+  }
+  
+  fieldset:focus-within{
+    background-color: #84a59d;
+  }
+  fieldset:focus-within legend{
+    background-color: #1b4332;
+  }
+
+/* clases */
+.texto-centrado {
+    text-align: center;
+}
+
+
+.texto-inicio {  
+    text-align: start;
+} 
+
+.texto-derecha {
+    text-align: right;
+}
+
+
+.cuadro-entrada {
+    max-width:400px;
+    min-width: 400px;
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border: solid 1px;
+    border-radius: 3px;
+    border-color:#83b6a6;
+   
+  }
+  
+.cuadro-pais {
+    max-width:400px;
+    min-width: 400px;
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border: solid 1px;
+    border-radius: 3px;
+    border-color:#83b6a6;
+    
+} 
+
+.texto-blanco {
+    color: #e8eaed; 
+    text-align: start; 
+}

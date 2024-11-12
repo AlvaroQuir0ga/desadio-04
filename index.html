@@ -20,25 +20,24 @@
   <h1>Vení al Gym! 💪🏼</h1>
     
   <form action="https://postman-echo.com/post" method="post">
-      
+  
     <fieldset class="texto-centrado">
         <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
         
-        <label for="nombre">Nombre:* </label> <br>
+        <label for="nombre">Nombre:* </label> 
         <input type="text" id="nombre" name="nombre" required class="cuadro-pais cuadro-entrada" > <br>
         
         
-        <label for="apellido">Apellido:* </label> <br>
+        <label for="apellido">Apellido:* </label> 
         <input type="text" id="apellido" name="apellido" required class="cuadro-pais cuadro-entrada">
         <br>
         
-        <label for="documento">Documento:* </label> <br>
+        <label for="documento">Documento:* </label> 
         <input type="text" id="documento" name="documento" required class="cuadro-pais cuadro-entrada">
-        <br>
-        
-        <div>
-          <label for="pais">Nacionalidad:*</label> <br>
-          <input list="nacion" type="text" name="nacionalidad" id="pais" placeholder=" - Seleccionar -" required class="cuadro-entrada cuadro-pais">
+        <br> 
+      
+          <label for="pais">Nacionalidad:*</label> 
+          <input class="texto-inicio cuadro-entrada cuadro-pais" list="nacion" type="text" name="nacionalidad" id="pais" placeholder=" - Seleccionar -" required>
           <datalist id="nacion">
             <option value="Argentina">
             <option value="Brasileña">
@@ -46,11 +45,13 @@
             <option value="Otra">
             
           </datalist>
-        </div>
+        
         <br>
         
-        <label for="descripcion">Contanos un poco de vos... </label> <br>
+        
+        <label for="descripcion">Contanos un poco de vos... </label> 
         <textarea id="descripcion" name="descripcion" class="cuadro-pais cuadro-entrada"></textarea>
+        
         <br>
         
         <label>Sexo:* </label> <br>
@@ -65,13 +66,18 @@
     <fieldset class="texto-centrado">
         <legend>📱 Datos de Contacto 📧</legend> 
         
-        <label for="telefono">Teléfono: </label> <br>
-        <input type="tel" id="telefono" name="telefono" placeholder="Código de área y número" class="cuadro-pais cuadro-entrada">
+        <div>
+        <label for="telefono">Teléfono: </label> 
+        <input class="cuadro-pais cuadro-entrada texto-derecha" type="tel" id="telefono" name="telefono" placeholder="Código de área y número">
         <br>
         
-        <label for="email">Dirección de correo electrónico:* </label> <br>
-        <input type="email" id="email" name="email" placeholder="mail@gmail.com" required class="cuadro-pais cuadro-entrada">
-        <br>
+        <label for="email">Dirección de correo electrónico:* </label> 
+        <input class="cuadro-pais cuadro-entrada texto-derecha" type="email" id="email" name="email" placeholder="Ej: mail@gmail.com" required>
+      
+      </div>
+        
+      <br>
+    
     </fieldset> 
 
     <hr>
@@ -103,7 +109,7 @@
     
     <p class="texto-blanco">*: campo obligatorio</p>
     
-    <div>
+    <div class="texto-centrado">
     
     <button type="submit">Iniciar afiliación</button>
     <button type="reset">Restablecer</button>
@@ -111,7 +117,7 @@
   </div>
   
 </form>
-    
+   
 
   <script type="module" src="/main.js"></script>
   </body>
