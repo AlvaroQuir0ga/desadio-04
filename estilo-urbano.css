@@ -1,133 +1,142 @@
-/* Nueva Paleta de colores:
-#F5CAC3 - Rosa Pastel 
-#735D78-  Purpura
-#ff6b6b - Rojo Vibrante (resaltados y botones)
-#ffe66d - Amarillo Claro (detalles y bordes)
-#f5f5f5 - Blanco Roto (texto y campos de entrada)
-*/ 
+/*Paleta de colores:
+#BE95C4-  Fucsia claro 
+#FFE8E5-  Beige
+#735D78 - Purpura 
+#5E548E - Violeta CLaro
+#231942 - Violeta Oscuro
+#6f2dbd - Violeta 
+#eac4d5 - Rosa Claro
+#DEC9E9 - Lila Claro 
+#9F86C0 - Lila 
+#ffff   - BLanco 
+#5E548E - Violeta 
+*/
 
+/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html {
-   background-image: url(public/images/gym-1.png);
-    background-color: #F5CAC3; 
-    color: #231942; 
-   
+    background-image: url(public/images/gym-1.png);
+    background-color: #eac4d5; /* Rosa claro */
+    color: #231942; /* Violeta Oscuro */
 }
 
 body {
-  
     margin: auto;
     font-family: "Ubuntu Mono", monospace;
     width: 60%;
-    max-width:600px; 
+    max-width: 600px;
 } 
 
 fieldset {
-    background-color: #FFE8E5;
-    font-family: "Ubuntu Mono", monospace; 
-    border: 1px solid #735D78; /* #735D78-  Purpura */ 
-    box-shadow: 0 0 20px #B392AC;
-    margin-bottom: 30px;  
-    
+    background-color: #DEC9E9; /* Lila Claro */
+    font-family: "Ubuntu Mono", monospace;
+    border: 1px solid #735D78; /* Purpura */
+    box-shadow: 0 0 20px #6f2dbd; /* Violeta */
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 h1 {
     font-family: "Be Vietnam Pro", sans-serif;
-    color: #231942;
-    font-size: 40px;  
+    background-color: #735D78; /* Purpura */
+    color: #ffff; /* Blanco */
+    font-size: 40px;
     text-transform: uppercase;
-    text-align: center; 
-    padding: 5px;  
-    box-shadow: 0 0 15px #231942;
-    border: 15px outset #E8C2CA;
-    border-left: inset 20px #E8C2CA;
-    border-right: inset 20px #E8C2CA; 
-    border-radius: 30px; 
-    margin: auto; 
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-}  
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 5px 30px #231942; /* Violeta Oscuro */
+    border: 10px solid #E8C2CA; /* Rosa Claro */
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 label {
     display: block;
+} 
+
+input { 
+    border: 1px solid #BE95C4; /* Fucsia claro  */
+    margin: auto;
 }
 
-hr {    
-    border: solid #735D78 5px; 
-    padding: 5px; 
+hr {
+    border: solid #735D78 5px; /* Purpura */
+    padding: 5px;
     max-width: 290px;
     min-width: 290px;
-    height:20px;
-    margin-top: 10px;
-    margin-bottom: 7px; 
-    border-left: 20px #231942 ;
-    border-right: 20px #231942; 
-    border-bottom: #231942 1px;
-}
-
-legend { 
-    background-color: #735D78; 
-    text-align: end; 
-    color: white; 
-    border: 1px #231942 solid; 
-    border-radius: 5px; 
-    padding: 5px; 
-    height:20px;
+    height: 20px;
     margin-top: 10px;
     margin-bottom: 7px;
-    font-size: 15px; 
-    text-transform: uppercase;
-} 
+    border-left: 20px #231942; /* Violeta Oscuro */
+    border-right: 20px #231942; /* Violeta Oscuro */
+    border-bottom: #231942 1px; /* Violeta Oscuro */
+}
+
+legend {
+    background-color: #735D78; /* Purpura */
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-variant: small-caps;
+    text-align: end;
+    color: #ffff; /* Blanco */
+    border: 1px #231942 solid; /* Violeta Oscuro */
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
 
 
 button {
-    background-color: #735D78;
-    color: white;
+    background-color: #735D78; /* Purpura */
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-variant: small-caps;
+    font-size: 16px;
+    color: #ffff; /* Blanco */
     padding: 20px;
-    border: inset #231942 1px;
-    border-radius: 5px;
+    border: inset #231942 1px; /* Violeta Oscuro */
+    border-radius: 5px; 
     margin-bottom: 20px;
     margin-left: 20px;
-    box-shadow: 0 0 20px #231942;
+    box-shadow: 0 0 20px #231942; /* Violeta Oscuro */
 }
 
-/* hover-active-focus */
+
 button:hover {
-   background-color: #BE95C4;
-    color: #231942;
+    background-color: #5E548E; /* Violeta Claro */
+    color: #ffff /* Blanco */
 }
 
 button:active {
-    background-color: #231942; 
-    color: #BE95C4; 
-   
-}  
+    background-color: #231942; /* Violeta Oscuro */
+    color: #BE95C4; /* Fucsia Claro */
 
-input {
-    border: 1px solid #BE95C4;
-    margin: auto;
-   
-}   
+}
 
-input:focus, textarea:focus{
-    background-color: #231942;
-    color: white;
-  }
-  input:focus::placeholder{
-    color: white;
-  }
-  
-  fieldset:focus-within{
-    background-color: #9F86C0;
-  }
-  fieldset:focus-within legend{
-    background-color: #5E548E;
-} 
+input:focus, textarea:focus {
+    background-color: #231942; /* Violeta Oscuro */
+    color: #ffff; /* Blanco */
+}
+
+input:focus::placeholder {
+    color: #ffff; /* Blanco */
+}
+
+fieldset:focus-within {
+    background-color: #9F86C0; /* Lila */
+}
+
+fieldset:focus-within legend {
+    background-color: #5E548E; /* Violeta Claro */
+}
 
 h1:hover {
-    background-color: #B392AC;
+    background-color: #5E548E; /* Violeta Claro */
+    color: #FFE8E5; /* Beige */
+    border: #FFE8E5 solid 5px; /* Beige */
+    border-radius: 1px;
 }
 
 /* clases */
@@ -136,9 +145,9 @@ h1:hover {
 }
 
 
-.texto-inicio {  
+.texto-inicio {
     text-align: start;
-} 
+}
 
 .texto-derecha {
     text-align: right;
@@ -146,31 +155,31 @@ h1:hover {
 
 
 .cuadro-entrada {
-    max-width:400px;
-    min-width: 400px;
-    height:20px;
+    max-width: 500px;
+    min-width: 500px;
+    height: 20px;
     margin-top: 10px;
     margin-bottom: 7px;
     border: solid 1px;
     border-radius: 3px;
-    border-color:#735D78;
-   
-  }
-  
+    border-color: #735D78; /* Purpura */
+    background-color: #BE95C4; /* Fucsia Claro */  
+}
+
 .cuadro-pais {
-    max-width:400px;
-    min-width: 400px;
-    height:20px;
+    max-width: 600px;
+    min-width: 600px;
+    height: 20px;
     margin-top: 10px;
     margin-bottom: 7px;
     border: solid 1px;
-    border-radius: 3px;
-    border-color:#735D78;
-    
-} 
+    border-radius: 8px;
+    border-color: #735D78; /* Purpura */
+}
 
 .texto-blanco {
     font-family: "Ubuntu Mono", monospace;
-    text-align: center;  
-    font-size: 20px;
+    text-align: center;
+    font-size: 20px; 
+    color: #ffff;
 }
